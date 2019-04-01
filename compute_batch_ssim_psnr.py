@@ -1,4 +1,4 @@
-# Compute the SSIM and PSNR of a batch of images
+# Compute the SSIM and PSNR of a batch of images with references
 
 import os
 from PIL import Image
