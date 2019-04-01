@@ -1,3 +1,5 @@
+# Compute the SSIM and PSNR of one image with reference image
+
 import numpy as np 
 from PIL import Image 
 from scipy.signal import convolve2d
