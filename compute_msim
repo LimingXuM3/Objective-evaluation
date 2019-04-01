@@ -1,6 +1,6 @@
 """Python implementation of MS-SSIM.
 Usage:
-python msssim.py --original_image=original.png --compared_image=distorted.png
+python msim.py --original_image=original.png --compared_image=distorted.png
 """
 
 import numpy as np
