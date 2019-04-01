@@ -52,12 +52,12 @@ else %images are grayscale
     Y1 = imageRef;
     Y2 = imageDis;
 end
-%% ����y1y2����ͼ
+
 Y1 = double(Y1);
 Y2 = double(Y2);
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%
-% Downsample the image �����²���
+% Downsample the image
 %%%%%%%%%%%%%%%%%%%%%%%%%
 minDimension = min(rows,cols);
 F = max(1,round(minDimension / 256));
