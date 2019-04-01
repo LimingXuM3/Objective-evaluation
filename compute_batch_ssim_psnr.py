@@ -1,3 +1,5 @@
+# Compute the SSIM and PSNR of a batch of images
+
 import os
 from PIL import Image
 from scipy.signal import convolve2d
