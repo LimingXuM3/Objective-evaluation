@@ -82,9 +82,9 @@ if __name__ == "__main__":
     for i in range(count):
         im1 = images1[i]
         im2 = images2[i]
-        ssim = compute_ssim(np.array(im1),np.array(im2))
+        ssim = compute_ssim(np.array(im1).astype(np.float32),np.array(im2).astype(np.float32))
         SSIM.append(ssim)
-        psnr = compute_psnr(np.array(im1),np.array(im2))
+        psnr = compute_psnr(np.array(im1).astype(np.float32),np.array(im2).astype(np.float32))
         PSNR.append(psnr)
     print('Average SSIM is %.3f' % np.mean(SSIM))
     print('Average PSNR is %.3f' % np.mean(PSNR))
