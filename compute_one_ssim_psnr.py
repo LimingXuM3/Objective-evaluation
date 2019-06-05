@@ -60,5 +60,5 @@ def compute_psnr(img1, img2):
 if __name__ == "__main__": 
     im1 = Image.open("./COCO/generated2.png").convert('L')
     im2 = Image.open("./COCO/raw2.png").convert('L')
-    print('SSIM = %.3f' % compute_ssim(np.array(im1),np.array(im2)))
-    print('PSNR = %.3f' % compute_psnr(np.array(im1),np.array(im2)))
+    print('SSIM = %.3f' % compute_ssim(np.array(im1).astype(np.float32),np.array(im2).astype(np.float32)))
+    print('PSNR = %.3f' % compute_psnr(np.array(im1).astype(np.float32),np.array(im2).astype(np.float32)))
